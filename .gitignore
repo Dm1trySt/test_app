@@ -6,9 +6,10 @@
 
 # Ignore bundler config.
 /.bundle
+/.idea/*
 
 # Ignore all environment files (except templates).
-/.env*
+#/.env*
 !/.env*.erb
 
 # Ignore all logfiles and tempfiles.
@@ -33,3 +34,8 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+/Gemfile.lock
+/Gemfile.local
+
+/db/schema.rb

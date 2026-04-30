@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      target: production
+    restart: always
+    ports:
+      - "8080:3000" # Порт прописан только в качестве примера
+    environment:
+      - RAILS_ENV=production
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}

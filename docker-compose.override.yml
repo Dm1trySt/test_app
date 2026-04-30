@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      target: development
+    command: bundle exec rails s -p 4000 -b '0.0.0.0'
+    volumes:
+      - .:/test_app
+    ports:
+      - "4000:4000"
+    environment:
+      - RAILS_ENV=development
