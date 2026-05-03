@@ -23,6 +23,7 @@ services:
   app:
     build:
       context: .
+    user: "${UID}:${GID}"
     environment:
       - DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@db:5432/${DB_NAME}
       - RAILS_LOG_TO_STDOUT=true
