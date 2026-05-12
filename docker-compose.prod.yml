@@ -2,7 +2,6 @@ services:
   app:
     build:
       target: production
-    restart: always
     ports:
       - "8080:3000" # Порт прописан только в качестве примера
     environment:
