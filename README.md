@@ -15,7 +15,7 @@
 * Сбор образа `docker compose up -d --build`;
 * Генерация нового RAILS_MASTER_KEY `docker compose run --rm app bundle exec rails credentials:edit`, будет создан файл /config/master.key в котором и будет находиться новый ключ, который нужно будет подставить в ./env RAILS_MASTER_KEY и раскомментировать строку;
 * Получение SECRET_KEY_BASE для /.env `docker compose run --rm app bundle exec rails secret`, в ответ на команду консоль отдаст длинный код это и будет нужный ключ;
-#### Если плангируется продолжать работу только в development:
+#### Если планируется продолжать работу только в development:
 * Запуск rails `docker compose up -d`
 * Запуск миграции `docker compose exec app bundle exec rails db:prepare`;
 
